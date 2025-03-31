@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anes Murtic | All About Me</title>
+    <meta name="description" content="Personal website showcasing my work, skills, and experience">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <style>
+        .experience-company {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;  /* Increased spacing after company name */
+        }
+
+        .experience-description {
+            color: var(--text-secondary);
+            line-height: 1.8;      /* Increased line height for better readability */
+        }
+
+        /* Add this new style for the bullet points */
+        .experience-description br {
+            content: "";
+            display: block;
+            margin-bottom: 0.8rem;  /* Adds space between bullet points */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="logo">Anes Murtic</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Anes's Website!</h1>
+            <p class="tagline">Make your self at home!</p>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="placeholder-profile.jpg" alt="Anes Murtic" loading="lazy">
+                    </div>
+                    <div class="bio">
+                        <h2>About Me</h2>
+                        <p>Hey there! My name is Anes Murtic, an 18-year-old Computer Science student at Arizona State University with a passion for technology, cars, and exploring the world. When I'm not coding or studying, you'll probably find me exploring the area capturing the beauty of the world.  
+
+                            Lets connect, whether to talk tech or collaborate on something awesome!  
+                            </p>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h2>Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Programming</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                                <li>C++</li>
+                                <li>C#</li>
+                                <li>C</li>
+                                <li>HTML</li>
+                                <li>MATLAB</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Problem-Solving and Logical Thinking</li>
+                                <li>Collaboration and Teamwork</li>
+                                <li>Work Ethic</li>
+                                <li>Organization</li>
+                                <li>Communication</li>
+                                <li>Time Management</li>
+                                <li>Adaptability and Willingness to learn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-section">
+                    <h2>Projects</h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <h3>AI Medical Robot</h3>
+                            <p class="experience-date">September 2024 - October 2024</p>
+                            <p class="experience-company">• Designed an AI-powered patient-interaction robot by 3D modeling and programming responsive behaviors (Python/C++), reducing perceived wait times and enhancing clinic engagement.<br>
+
+                                • Proposed innovative facility layouts by analyzing institutional needs with cross-sector partners (ASU/Banner Health/Mayo Clinic), optimizing space for engineering-driven medical education.  
+                                <br>
+
+                                • Presented final technical proposals to city and healthcare stakeholders, securing alignment on budget allocation and project vision</p>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <h3>RythmoGear</h3>
+                            <p class="experience-date">October 2024 - November 2024</p>
+                            <p class="experience-company">• Designed and prototyped a wearable drum set using capacitive touch sensors and Arduino to enable music creation through body movements, solving space/cost barriers of traditional drums<br>
+
+                                • Integrated TF-Audio-Decoder-Module and breadboard circuits to trigger dynamic sound playback via touch inputs on arms/legs/torso. <br>
+
+                                • Developed 3D-modeled attachable drums for ergonomic wearability, optimizing portability and user expression.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch!</h2>
+                <form id="contact-form" action="https://formspree.io/f/xldjwayl" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/anesmurtic" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anes-murtic-40936a330/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Anes Murtic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
